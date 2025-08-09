@@ -1,0 +1,10 @@
+<library path="package_b">
+  <class name="package_b/MyPlugin"
+         type="package_b::MyPlugin"
+         base_class_type="package_a::BaseInterface">
+    <description>
+      Example plugin implementation of BaseInterface.
+    </description>
+  </class>
+</library>
+
