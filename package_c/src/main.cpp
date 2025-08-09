@@ -2,8 +2,7 @@
 #include <package_a/base_interface.hpp>
 #include <iostream>
 
-int main()
-{
+int main() {
   pluginlib::ClassLoader<package_a::BaseInterface> loader(
     "package_a", "package_a::BaseInterface");
 
