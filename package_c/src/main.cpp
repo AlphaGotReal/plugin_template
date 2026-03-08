@@ -8,7 +8,8 @@ int main() {
 
   try {
     auto plugin = loader.createSharedInstance("package_b/MyPlugin");
-    std::cout << plugin->process("Hello World") << std::endl;
+    std::cout << plugin->read("Hello World")[0].val << std::endl;
+    std::cout << plugin->write("Hello World")[0].val << std::endl;
   }
   catch (const pluginlib::PluginlibException &ex) {
     std::cerr << "Plugin failed to load: " << ex.what() << std::endl;
